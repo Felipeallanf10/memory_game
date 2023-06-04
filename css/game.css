@@ -1,3 +1,42 @@
+button, img {
+  width: 45px;
+  position: absolute;
+  top: 25px;
+  left: 20px;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-image: url(../images/bg.jpg);
+  background-size: cover;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 20px 50px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(255,255,255, 0.8);
+  width: 100%;
+  max-width: 800px;
+  padding: 30px;
+  margin: 0 0 30px;
+  border-radius: 5px;
+}
+
+span {
+  display: flex;
+  gap: 5px;
+}
+
+header div{
+  display: flex;
+  gap: 5px;
+}
 .grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -25,6 +64,7 @@
   background-position: center;
   border: 2px solid #38913a;
   border-radius: 5px;
+  transition: all 400ms ease;
 }
 
 .front {
@@ -38,4 +78,9 @@
 
 .reveal-card {
   transform: rotateY(180deg);
+}
+
+.disabled-card {
+  filter: saturate(0.5);
+  opacity: 0.5;
 }
