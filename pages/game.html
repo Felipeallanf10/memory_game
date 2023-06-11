@@ -10,7 +10,12 @@
     <title>Memory game</title>
   </head>
   <body>
-    <a href="../index.html"><img src="https://cdn-icons-png.flaticon.com/512/61/61022.png" alt=""></a>
+    <a href="../index.html"
+      ><img
+        id="retornar"
+        src="https://cdn-icons-png.flaticon.com/512/61/61022.png"
+        alt=""
+    /></a>
 
     <section>
       <header>
@@ -18,11 +23,19 @@
         <div>
           <span>Tempo</span>
           <span id="minuto">0</span>
-          <div id="pontos" style="display: none;">:</div>
+          <div id="pontos" style="display: none">:</div>
           <span class="timer">00</span>
         </div>
       </header>
       <div class="grid"></div>
+      <table width="220px">
+        <tbody id="podio">
+          <tr>
+            <th>Player</th>
+            <th>Tempo</th>
+          </tr>
+        </tbody>
+      </table>
     </section>
   </body>
 </html>

@@ -10,13 +10,17 @@ const valideteInput = ({ target }) => {
   }
 }
 
-const handleSubmit = (event) => {
-  event.preventDefault();
+const handleSubmit = event => {
+  event.preventDefault()
+  let players = new Array()
   
-  localStorage.setItem('player', input.value)
-
+  if (localStorage.hasOwnProperty('players')) {
+    players = JSON.parse(localStorage.getItem('players'))
+  }
+  players.push({player:input.value})
+  localStorage.setItem('players', JSON.stringify(players));
+  //localStorage.setItem('player', input.value)
   window.location = 'pages/game.html'
-
 }
 input.addEventListener('input', valideteInput)
 form.addEventListener('submit', handleSubmit)

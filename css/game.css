@@ -84,3 +84,22 @@ header div{
   filter: saturate(0.5);
   opacity: 0.5;
 }
+
+#podio {
+  position: absolute;
+  text-align:justify;
+  background-color: white;
+  padding: 8px;
+  top: 100px;
+  left: 20px;
+  row-gap: 20px;
+  border-spacing: 10px;
+}
+
+.item td{
+  font-size: 13px;
+}
+
+.existisPodio {
+  display: none;
+}
